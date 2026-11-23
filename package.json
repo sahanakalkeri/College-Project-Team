@@ -1,0 +1,16 @@
+{
+  "name": "college-project-team-system",
+  "version": "1.0.0",
+  "description": "College Project Team Formation and Management System",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "seed": "node backend/src/seed/seed.js",
+    "dev:backend": "node backend/src/server.js",
+    "dev:frontend": "npm run --prefix frontend dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

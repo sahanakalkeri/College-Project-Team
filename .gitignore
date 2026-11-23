@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+node_modules
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Production Builds
+dist/
+dist
+
+# Database and uploaded files
+*.sqlite
+backend/src/data/*.sqlite
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# System & Editor files
+.DS_Store
+Thumbs.db
